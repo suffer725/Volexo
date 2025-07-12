@@ -1,0 +1,32 @@
+/* Modern AdminDashboard Styles for Veloxo */
+.admin-container {
+  @apply max-w-2xl mx-auto mt-12 p-8 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-white/20;
+}
+
+.admin-container h2 {
+  @apply text-3xl font-bold text-center mb-8 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
+}
+
+.onboard-section {
+  @apply flex flex-col items-center space-y-4;
+}
+
+.onboard-section h3 {
+  @apply text-xl font-semibold text-secondary-800 mb-4;
+}
+
+.onboard-section input {
+  @apply w-full max-w-md px-4 py-3 rounded-xl border border-secondary-200 bg-white/80 backdrop-blur-sm focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ease-in-out;
+}
+
+.onboard-section button {
+  @apply w-full max-w-md bg-gradient-to-r from-primary-500 to-accent-500 hover:from-primary-600 hover:to-accent-600 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out border-none cursor-pointer;
+}
+
+.onboard-section button:disabled {
+  @apply bg-secondary-300 cursor-not-allowed transform-none shadow-none;
+}
+
+.message {
+  @apply mt-4 font-semibold text-green-600 text-center;
+}

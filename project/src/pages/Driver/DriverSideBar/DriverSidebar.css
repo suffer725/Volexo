@@ -1,0 +1,21 @@
+/* Modern DriverSidebar Styles for Veloxo */
+.sidebar {
+  @apply w-64 min-h-screen bg-white/95 backdrop-blur-md border-r border-white/20 shadow-xl p-6 flex flex-col;
+}
+
+.sidebar h2 {
+  @apply text-xl font-bold mb-6 text-center bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
+}
+
+.menu-item {
+  @apply px-4 py-3 mb-2 cursor-pointer rounded-xl transition-all duration-300 ease-in-out text-secondary-700 font-medium hover:bg-gradient-to-r hover:from-primary-50 hover:to-accent-50 hover:text-primary-700 hover:shadow-lg;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  @apply bg-gradient-to-r from-primary-500 to-accent-500 text-white shadow-xl transform scale-105;
+}
+
+.logout {
+  @apply mt-auto text-red-600 hover:bg-red-50 hover:text-red-700;
+}

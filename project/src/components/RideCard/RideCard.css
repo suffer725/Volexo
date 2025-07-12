@@ -1,0 +1,53 @@
+/* Modern RideCard Styles for Veloxo */
+.ride-card-container {
+  @apply bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 p-6 m-4 w-full max-w-lg font-inter text-secondary-800 transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-[1.02];
+}
+
+.ride-card-container h3 {
+  @apply text-xl font-bold text-secondary-800 mb-4 flex justify-between items-center;
+}
+
+.ride-card-container h3 span {
+  @apply text-lg text-secondary-600;
+}
+
+.ride-card-container .ride-details {
+  @apply text-base text-secondary-700 mb-4 space-y-3;
+}
+
+.ride-card-container .ride-details div {
+  @apply mb-3 p-3 bg-gradient-to-r from-white/90 to-primary-50/90 rounded-xl border border-secondary-200;
+}
+
+.ride-card-container .ride-details .location,
+.ride-card-container .ride-details .fare {
+  @apply font-semibold text-secondary-800;
+}
+
+.ride-card-container .ride-footer {
+  @apply text-sm text-secondary-600 mt-4 pt-4 border-t border-secondary-200;
+}
+
+.ride-card-container .ride-footer span {
+  @apply font-semibold;
+}
+
+.ride-card-container .driver-details {
+  @apply bg-gradient-to-r from-secondary-50 to-primary-50 p-4 rounded-xl mt-4 border border-secondary-200;
+}
+
+.ride-card-container .driver-details h4 {
+  @apply mb-2 text-base font-semibold text-secondary-800;
+}
+
+.ride-card-container .driver-details div {
+  @apply mb-2 text-secondary-700;
+}
+
+.ride-card-container .timestamps {
+  @apply mt-4 text-sm text-secondary-600 space-y-2;
+}
+
+.ride-card-container .timestamps div {
+  @apply mb-2;
+}

@@ -1,0 +1,84 @@
+/* Modern RiderWallet Styles for Veloxo */
+.wallet-container {
+  @apply flex flex-col items-center w-full min-h-screen p-6 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50;
+}
+
+.wallet-container h2 {
+  @apply text-3xl font-bold text-center mb-8 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
+}
+
+.tabs {
+  @apply flex justify-center w-full max-w-lg mb-6 bg-white/90 backdrop-blur-md rounded-2xl p-2 shadow-xl border border-white/20;
+}
+
+.tabs button {
+  @apply flex-1 py-3 px-4 font-semibold rounded-xl transition-all duration-300 ease-in-out text-secondary-700;
+}
+
+.tabs .active {
+  @apply bg-gradient-to-r from-primary-500 to-accent-500 text-white shadow-lg transform scale-105;
+}
+
+.tab-content {
+  @apply flex flex-col items-center w-full max-w-lg p-8 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-white/20;
+}
+
+.balance h3 {
+  @apply text-4xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent;
+}
+
+.balance p {
+  @apply text-secondary-600 text-lg mb-4;
+}
+
+.add input {
+  @apply w-full px-4 py-3 text-lg rounded-xl border border-secondary-200 bg-white/80 backdrop-blur-sm focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ease-in-out mb-4;
+}
+
+.add button {
+  @apply w-full bg-gradient-to-r from-primary-500 to-accent-500 hover:from-primary-600 hover:to-accent-600 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out;
+}
+
+.transaction-list {
+  @apply list-none p-0 mt-4 w-full space-y-4;
+}
+
+.transaction-list li {
+  @apply flex flex-col p-4 bg-gradient-to-r from-white/90 to-primary-50/90 backdrop-blur-md rounded-xl shadow-lg border border-white/20 transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.02];
+}
+
+.transaction-header {
+  @apply flex justify-between items-center mb-2;
+}
+
+.transaction-header strong {
+  @apply text-secondary-800 font-semibold;
+}
+
+.transaction-body {
+  @apply flex justify-between items-center;
+}
+
+.transaction-body .date {
+  @apply text-secondary-600 text-sm;
+}
+
+.transaction-body .amount {
+  @apply text-lg font-bold text-green-600;
+}
+
+.transaction-footer .description {
+  @apply text-secondary-600 text-sm mt-2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tab-content {
+    @apply w-full mx-4;
+  }
+
+  .add input,
+  .add button {
+    @apply w-full;
+  }
+}

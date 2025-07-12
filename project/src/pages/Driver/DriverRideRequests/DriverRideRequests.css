@@ -1,0 +1,52 @@
+/* Modern DriverRideRequests Styles for Veloxo */
+.driver-ride-requests {
+  @apply p-6;
+}
+
+.driver-ride-requests h1 {
+  @apply text-3xl font-bold mb-8 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
+}
+
+.ride-requests-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.ride-request-card {
+  @apply bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 transition-all duration-300 ease-in-out hover:shadow-2xl hover:scale-[1.02];
+}
+
+.ride-header {
+  @apply flex justify-between items-center mb-4;
+}
+
+.ride-header h2 {
+  @apply text-lg font-bold text-secondary-800;
+}
+
+.ride-status {
+  @apply bg-gradient-to-r from-primary-500 to-accent-500 text-white px-3 py-1 rounded-full text-sm font-semibold;
+}
+
+.ride-request-card p {
+  @apply mb-2 text-secondary-700;
+}
+
+.ride-request-card strong {
+  @apply text-secondary-800;
+}
+
+.ride-actions {
+  @apply mt-6 flex gap-3;
+}
+
+.accept-btn {
+  @apply flex-1 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out border-none cursor-pointer;
+}
+
+.reject-btn {
+  @apply flex-1 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out border-none cursor-pointer;
+}
+
+.no-requests {
+  @apply text-center text-xl text-secondary-600 p-8 col-span-full;
+}

@@ -1,0 +1,28 @@
+/* Modern RiderDashboard Styles for Veloxo */
+.modal-options {
+  @apply absolute top-full right-5 bg-white/95 backdrop-blur-md shadow-2xl border border-white/20 rounded-2xl p-2 w-56 z-50;
+  animation: slideDown 0.3s ease-out;
+}
+
+.modal-options ul {
+  @apply list-none p-0 m-0;
+}
+
+.modal-options li {
+  @apply px-4 py-3 text-base text-center cursor-pointer rounded-xl transition-all duration-300 ease-in-out text-secondary-700 hover:bg-gradient-to-r hover:from-primary-50 hover:to-accent-50 hover:text-primary-700 font-medium;
+}
+
+.modal-options li:hover {
+  @apply transform scale-105 shadow-lg;
+}
+
+@keyframes slideDown {
+  from { 
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

@@ -1,0 +1,8 @@
+/* Modern RiderDashboard Styles for Veloxo */
+.rider-dashboard {
+  @apply flex w-full min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50;
+}
+
+.dashboard-content {
+  @apply flex-1 p-6 overflow-y-auto;
+}

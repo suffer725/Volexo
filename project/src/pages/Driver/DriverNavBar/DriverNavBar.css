@@ -1,0 +1,12 @@
+/* Modern DriverNavBar Styles for Veloxo */
+.nav-bar {
+  @apply h-16 bg-gradient-to-r from-primary-500 to-accent-500 text-white flex items-center px-6 text-xl shadow-lg;
+}
+
+.nav-bar-logo {
+  @apply font-bold font-poppins;
+}
+
+.nav-bar-user {
+  @apply ml-auto font-medium;
+}

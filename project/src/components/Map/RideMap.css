@@ -1,0 +1,22 @@
+/* Modern RideMap Styles for Veloxo */
+.ride-map-container {
+  @apply w-full h-full relative;
+}
+
+.modal-open .leaflet-control-container,
+.modal-open .leaflet-top,
+.modal-open .leaflet-bottom {
+  @apply hidden;
+}
+
+.ride-map {
+  @apply w-full h-full rounded-2xl overflow-hidden shadow-xl;
+}
+
+.map-container {
+  @apply w-full h-full rounded-2xl overflow-hidden shadow-xl border border-white/20;
+}
+
+.map {
+  @apply w-full h-full;
+}

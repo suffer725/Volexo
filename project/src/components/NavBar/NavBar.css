@@ -1,0 +1,33 @@
+/* Modern NavBar Styles for Veloxo */
+.header {
+  @apply fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-white/20 shadow-lg z-50;
+  padding: 15px 20px;
+}
+
+.header-content {
+  @apply flex justify-between items-center max-w-7xl mx-auto;
+}
+
+.logo {
+  @apply flex items-center gap-3;
+}
+
+.logo-text {
+  @apply text-3xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
+}
+
+.auth-buttons {
+  @apply flex items-center gap-3;
+}
+
+.auth-buttons button {
+  @apply px-6 py-2.5 rounded-xl font-medium transition-all duration-300 ease-in-out transform hover:scale-105;
+}
+
+.login-btn-header {
+  @apply bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white shadow-lg hover:shadow-xl;
+}
+
+.signup-btn {
+  @apply bg-white/90 hover:bg-white text-primary-600 border border-primary-200 hover:border-primary-300 shadow-lg hover:shadow-xl;
+}

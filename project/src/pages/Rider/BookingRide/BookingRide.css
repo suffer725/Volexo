@@ -1,0 +1,78 @@
+/* Modern BookingRide Styles for Veloxo */
+.booking-container {
+  @apply flex flex-wrap justify-between mt-20 gap-6 p-4 bg-gradient-to-br from-white/90 to-primary-50/90 backdrop-blur-md rounded-2xl shadow-xl border border-white/20;
+}
+
+.booking-form {
+  @apply flex-1 min-w-[400px] max-w-[500px] flex flex-col gap-4 p-6 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl border border-white/20;
+}
+
+.booking-form h2 {
+  @apply text-2xl font-bold mb-4 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
+}
+
+.form-group {
+  @apply flex flex-col gap-2 relative;
+}
+
+.form-group label {
+  @apply font-semibold text-secondary-700 text-sm;
+}
+
+.form-group input,
+.form-group select {
+  @apply w-full px-4 py-3 rounded-xl border border-secondary-200 bg-white/80 backdrop-blur-sm focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ease-in-out placeholder-secondary-400;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  @apply shadow-lg;
+}
+
+.suggestions-container {
+  @apply absolute top-full left-0 w-full max-h-60 overflow-y-auto bg-white/95 backdrop-blur-md border border-secondary-200 rounded-xl shadow-xl z-50 mt-1;
+}
+
+.suggestion-item {
+  @apply px-4 py-3 cursor-pointer text-secondary-700 hover:bg-gradient-to-r hover:from-primary-50 hover:to-accent-50 hover:text-primary-700 transition-all duration-200 ease-in-out border-b border-secondary-100 last:border-b-0;
+}
+
+.suggestion-item:hover {
+  @apply transform scale-[1.02];
+}
+
+.button-group {
+  @apply mt-4;
+}
+
+.request-button {
+  @apply w-full bg-gradient-to-r from-primary-500 to-accent-500 hover:from-primary-600 hover:to-accent-600 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out;
+}
+
+.request-button:disabled {
+  @apply bg-secondary-300 cursor-not-allowed transform-none shadow-none;
+}
+
+.map-container {
+  @apply flex-1 min-w-[400px] h-96 rounded-2xl overflow-hidden shadow-xl border border-white/20;
+}
+
+.map {
+  @apply w-full h-full;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-container {
+    @apply flex-col p-3;
+  }
+
+  .booking-form,
+  .map-container {
+    @apply min-w-full;
+  }
+
+  .suggestions-container {
+    @apply text-sm;
+  }
+}

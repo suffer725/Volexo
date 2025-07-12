@@ -1,0 +1,60 @@
+/* Modern FindDriverModal Styles for Veloxo */
+.modal-overlay {
+  @apply fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50 p-4;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.find-driver-modal {
+  @apply bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 p-8 w-full max-w-md text-center;
+  animation: slideUp 0.3s ease-out;
+}
+
+.driver-emoji {
+  @apply text-6xl block mb-4;
+  animation: bounceSubtle 2s ease-in-out infinite;
+}
+
+.find-driver-modal h2 {
+  @apply text-2xl font-bold mb-3 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
+}
+
+.find-driver-modal p {
+  @apply text-secondary-600 mb-6 text-lg;
+}
+
+.progress-bar {
+  @apply w-full h-3 bg-secondary-200 rounded-full overflow-hidden mb-4 shadow-inner;
+}
+
+.progress-fill {
+  @apply h-full bg-gradient-to-r from-primary-500 to-accent-500 transition-all duration-1000 ease-linear rounded-full;
+}
+
+.timer {
+  @apply text-primary-600 font-semibold text-lg mb-6;
+}
+
+.cancel-button {
+  @apply w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bounceSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}

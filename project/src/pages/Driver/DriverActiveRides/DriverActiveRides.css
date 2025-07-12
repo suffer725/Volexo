@@ -1,0 +1,41 @@
+/* Modern DriverActiveRides Styles for Veloxo */
+.active-ride-container {
+  @apply text-center p-8 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 min-h-screen flex flex-col items-center justify-center;
+}
+
+.active-ride-container h2 {
+  @apply text-3xl font-bold mb-8 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
+}
+
+.ride-card {
+  @apply bg-white/90 backdrop-blur-md p-8 rounded-2xl shadow-xl border border-white/20 max-w-md w-full;
+}
+
+.ride-card p {
+  @apply text-lg text-secondary-700 mb-4;
+}
+
+.ride-card strong {
+  @apply text-secondary-800;
+}
+
+.otp-section {
+  @apply mt-6;
+}
+
+.otp-input {
+  @apply w-full px-4 py-3 text-lg rounded-xl border border-secondary-200 bg-white/80 backdrop-blur-sm focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ease-in-out mb-4;
+}
+
+.start-btn,
+.end-btn {
+  @apply w-full font-semibold py-3 text-lg cursor-pointer rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out border-none;
+}
+
+.start-btn {
+  @apply bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white;
+}
+
+.end-btn {
+  @apply bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white;
+}
