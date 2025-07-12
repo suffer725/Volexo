@@ -42,8 +42,10 @@
 +        <span>{ride.rideStatus}</span>
 +      </h3>
 +      <div className="ride-details">
-+        <div>
-+          <span className="location">Pickup:</span> {ride.pickupLocation?.coordinates?.join(", ") || "N/A"}
++         }
+       <div>
++          <span className="location">Pickup:</span> {ride.pickupLocation        }
+?.coordinates?.join(", ") || "N/A"}
 +        </div>
 +        <div>
 +          <span className="location">Drop-off:</span> {ride.dropOffLocation?.coordinates?.join(", ") || "N/A"}
