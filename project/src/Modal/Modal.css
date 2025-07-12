@@ -1,67 +1,135 @@
-/* Modern Modal Styles for Veloxo */
-.modal-overlay {
-  @apply fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50 p-4;
-  animation: fadeIn 0.3s ease-out;
-}
+@@ .. @@
+ /* Modern Modal Styles for Veloxo */
+ .modal-overlay {
+-  @apply fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-center z-50 p-4;
++  position: fixed;
++  top: 0;
++  left: 0;
++  right: 0;
++  bottom: 0;
++  background: rgba(0, 0, 0, 0.6);
++  backdrop-filter: blur(4px);
++  display: flex;
++  justify-content: center;
++  align-items: center;
++  z-index: 50;
++  padding: 1rem;
+   animation: fadeIn 0.3s ease-out;
+ }
 
-.login-modal,
-.success-modal {
-  @apply bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 p-8 w-full max-w-md;
-  animation: slideUp 0.3s ease-out;
-}
+ .login-modal,
+ .success-modal {
+-  @apply bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-white/20 p-8 w-full max-w-md;
++  background: rgba(255, 255, 255, 0.95);
++  backdrop-filter: blur(12px);
++  border-radius: 1rem;
++  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
++  border: 1px solid rgba(255, 255, 255, 0.2);
++  padding: 2rem;
++  width: 100%;
++  max-width: 28rem;
+   animation: slideUp 0.3s ease-out;
+ }
 
-.login-modal h2,
-.success-modal h2 {
-  @apply text-2xl font-bold text-center mb-6 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
-}
+ .login-modal h2,
+ .success-modal h2 {
+-  @apply text-2xl font-bold text-center mb-6 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent font-poppins;
++  font-size: 1.5rem;
++  font-weight: bold;
++  text-align: center;
++  margin-bottom: 1.5rem;
++  background: linear-gradient(to right, #2563eb, #d946ef);
++  -webkit-background-clip: text;
++  background-clip: text;
++  color: transparent;
++  font-family: 'Poppins', sans-serif;
+ }
 
-.input-field {
-  @apply w-full px-4 py-3 rounded-xl border border-secondary-200 bg-white/80 backdrop-blur-sm focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ease-in-out placeholder-secondary-400 mb-4;
-}
+ .input-field {
+-  @apply w-full px-4 py-3 rounded-xl border border-secondary-200 bg-white/80 backdrop-blur-sm focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300 ease-in-out placeholder-secondary-400 mb-4;
++  width: 100%;
++  padding: 0.75rem 1rem;
++  border-radius: 0.75rem;
++  border: 1px solid #e2e8f0;
++  background: rgba(255, 255, 255, 0.8);
++  backdrop-filter: blur(4px);
++  transition: all 0.3s ease-in-out;
++  margin-bottom: 1rem;
++}
++
++.input-field::placeholder {
++  color: #94a3b8;
+ }
 
-.input-field:focus {
-  @apply shadow-lg;
-}
+ .input-field:focus {
+-  @apply shadow-lg;
++  outline: none;
++  box-shadow: 0 0 0 2px #3b82f6;
++  border-color: transparent;
+ }
 
-.login-btn {
-  @apply w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out mb-3;
-}
+ .login-btn {
+-  @apply w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out mb-3;
++  width: 100%;
++  background: linear-gradient(to right, #3b82f6, #2563eb);
++  color: white;
++  font-weight: 500;
++  padding: 0.75rem;
++  border-radius: 0.75rem;
++  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
++  border: none;
++  cursor: pointer;
++  transition: all 0.3s ease-in-out;
++  margin-bottom: 0.75rem;
++}
++
++.login-btn:hover {
++  background: linear-gradient(to right, #2563eb, #1d4ed8);
++  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
++  transform: scale(1.05);
+ }
 
-.cancel-btn {
-  @apply w-full bg-white/90 hover:bg-white text-secondary-700 font-medium py-3 rounded-xl border border-secondary-200 hover:border-secondary-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out;
-}
+ .cancel-btn {
+-  @apply w-full bg-white/90 hover:bg-white text-secondary-700 font-medium py-3 rounded-xl border border-secondary-200 hover:border-secondary-300 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out;
++  width: 100%;
++  background: rgba(255, 255, 255, 0.9);
++  color: #334155;
++  font-weight: 500;
++  padding: 0.75rem;
++  border-radius: 0.75rem;
++  border: 1px solid #e2e8f0;
++  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
++  cursor: pointer;
++  transition: all 0.3s ease-in-out;
++}
++
++.cancel-btn:hover {
++  background: white;
++  border-color: #cbd5e1;
++  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
++  transform: scale(1.05);
+ }
 
-/* Success Modal Styles */
-.success-message {
-  @apply flex flex-col items-center text-center;
-}
+ /* Success Modal Styles */
+ .success-message {
+-  @apply flex flex-col items-center text-center;
++  display: flex;
++  flex-direction: column;
++  align-items: center;
++  text-align: center;
+ }
 
-.checkmark {
-  @apply text-5xl text-green-500 mb-4;
-  animation: bounceSubtle 0.6s ease-in-out;
-}
+ .checkmark {
+-  @apply text-5xl text-green-500 mb-4;
++  font-size: 3rem;
++  color: #10b981;
++  margin-bottom: 1rem;
+   animation: bounceSubtle 0.6s ease-in-out;
+ }
 
-.success-modal p {
-  @apply text-secondary-600 mb-6 text-lg;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideUp {
-  from { 
-    opacity: 0;
-    transform: translateY(20px) scale(0.95);
-  }
-  to { 
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes bounceSubtle {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
+ .success-modal p {
+-  @apply text-secondary-600 mb-6 text-lg;
++  color: #475569;
++  margin-bottom: 1.5rem;
++  font-size: 1.125rem;
+ }
